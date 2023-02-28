@@ -6,11 +6,10 @@ internal class Program
     private static void Main(string[] args)
     {
         int opcao = 0;
-        Console.WriteLine(@"Escolha uma opção:
-                            \n\n1 - Cadastrar usuário
-                            \n2 - Excluir usuário
-                            \n3 - Buscar todos os usuários");
-
+        Console.WriteLine("Escolha uma opção:");
+        Console.WriteLine("1 - Cadastrar usuário");
+        Console.WriteLine("2 - Excluir usuário");
+        Console.WriteLine("3 - Buscar todos os usuários");
 
         opcao = Convert.ToInt32(Console.ReadLine());
 
@@ -29,21 +28,25 @@ internal class Program
                 break;
         }
     }
-
     private static void BuscarTodosOsUsuarios()
     {
-        UsuarioBLL usuarioBLL = new UsuarioBLL();
-        List<Usuario> usuarios = usuarioBLL.BuscarTodos();
-
-        foreach (Usuario item in usuarios)
+        try
         {
-            Console.WriteLine("Id: " + item.Id);
-            Console.WriteLine("Nome de usuário: " + item.NomeUsuario);
-            Console.WriteLine("E-mail: " + item.Email);
+            UsuarioBLL usuarioBLL = new UsuarioBLL();
+            List<Usuario> usuarios = usuarioBLL.BuscarTodos();
+
+            foreach (Usuario item in usuarios)
+            {
+                Console.WriteLine("Id: " + item.Id);
+                Console.WriteLine("Nome de usuário: " + item.NomeUsuario);
+                Console.WriteLine("E-mail: " + item.Email);
+            }
         }
-
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
-
     private static void CadastrarUsuario()
     {
         try
@@ -67,7 +70,6 @@ internal class Program
             Console.WriteLine(ex.Message);
         }
     }
-
     private static void ExcluirUsuario()
     {
         Console.WriteLine("Excluir usuário");

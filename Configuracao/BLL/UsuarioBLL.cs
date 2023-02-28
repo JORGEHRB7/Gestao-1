@@ -29,7 +29,6 @@ namespace BLL
         {
             
         }
-
         private static void ValidarDados(Usuario _usuario)
         {
             if (_usuario.NomeUsuario.Length <= 3 || _usuario.NomeUsuario.Length >= 50)
@@ -44,7 +43,6 @@ namespace BLL
             if (_usuario.Senha.Length < 7 || _usuario.Senha.Length > 11)
                 throw new Exception("A senha deve ter entre 7 e 11 caracteres.");
         }
-
         public void Excluir(int _id)
         {
             UsuarioDAL usuarioDAL = new UsuarioDAL();
