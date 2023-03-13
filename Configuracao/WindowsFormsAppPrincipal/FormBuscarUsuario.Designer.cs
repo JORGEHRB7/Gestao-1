@@ -34,61 +34,65 @@
             this.button1 = new System.Windows.Forms.Button();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usuarioBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.usuarioBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.usuarioDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.grupoUsuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.grupoUsuariosDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.usuarioBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.usuarioDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.grupoUsuariosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.grupoUsuariosDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingNavigator)).BeginInit();
             this.usuarioBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuariosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grupoUsuariosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuariosDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(12, 64);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(619, 22);
+            this.textBox1.Size = new System.Drawing.Size(503, 22);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(637, 64);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(521, 64);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // usuarioBindingSource
-            // 
-            this.usuarioBindingSource.DataSource = typeof(Models.Usuario);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // usuarioBindingNavigator
             // 
@@ -117,9 +121,34 @@
             this.usuarioBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.usuarioBindingNavigator.Name = "usuarioBindingNavigator";
             this.usuarioBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.usuarioBindingNavigator.Size = new System.Drawing.Size(1404, 27);
+            this.usuarioBindingNavigator.Size = new System.Drawing.Size(1263, 27);
             this.usuarioBindingNavigator.TabIndex = 2;
             this.usuarioBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -127,7 +156,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 26);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -136,13 +165,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 26);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 29);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -154,17 +183,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 26);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 29);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -172,7 +194,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 26);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -181,31 +203,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 26);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 29);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 26);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // usuarioBindingNavigatorSaveItem
             // 
@@ -213,122 +217,18 @@
             this.usuarioBindingNavigatorSaveItem.Enabled = false;
             this.usuarioBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("usuarioBindingNavigatorSaveItem.Image")));
             this.usuarioBindingNavigatorSaveItem.Name = "usuarioBindingNavigatorSaveItem";
-            this.usuarioBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 26);
+            this.usuarioBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.usuarioBindingNavigatorSaveItem.Text = "Save Data";
-            // 
-            // usuarioDataGridView
-            // 
-            this.usuarioDataGridView.AllowUserToAddRows = false;
-            this.usuarioDataGridView.AllowUserToDeleteRows = false;
-            this.usuarioDataGridView.AllowUserToOrderColumns = true;
-            this.usuarioDataGridView.AutoGenerateColumns = false;
-            this.usuarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usuarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewCheckBoxColumn1});
-            this.usuarioDataGridView.DataSource = this.usuarioBindingSource;
-            this.usuarioDataGridView.Location = new System.Drawing.Point(12, 93);
-            this.usuarioDataGridView.Name = "usuarioDataGridView";
-            this.usuarioDataGridView.ReadOnly = true;
-            this.usuarioDataGridView.RowHeadersWidth = 51;
-            this.usuarioDataGridView.RowTemplate.Height = 24;
-            this.usuarioDataGridView.Size = new System.Drawing.Size(909, 475);
-            this.usuarioDataGridView.TabIndex = 3;
-            this.usuarioDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usuarioDataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "NomeUsuario";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nome de usuário";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 137;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "CPF";
-            this.dataGridViewTextBoxColumn4.HeaderText = "CPF";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn5.HeaderText = "E-mail";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 170;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Ativo";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Ativo";
-            this.dataGridViewCheckBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
-            this.dataGridViewCheckBoxColumn1.Width = 40;
             // 
             // grupoUsuariosBindingSource
             // 
             this.grupoUsuariosBindingSource.DataMember = "GrupoUsuarios";
             this.grupoUsuariosBindingSource.DataSource = this.usuarioBindingSource;
             // 
-            // grupoUsuariosDataGridView
-            // 
-            this.grupoUsuariosDataGridView.AllowUserToAddRows = false;
-            this.grupoUsuariosDataGridView.AllowUserToDeleteRows = false;
-            this.grupoUsuariosDataGridView.AllowUserToOrderColumns = true;
-            this.grupoUsuariosDataGridView.AutoGenerateColumns = false;
-            this.grupoUsuariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grupoUsuariosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn6});
-            this.grupoUsuariosDataGridView.DataSource = this.grupoUsuariosBindingSource;
-            this.grupoUsuariosDataGridView.Location = new System.Drawing.Point(927, 92);
-            this.grupoUsuariosDataGridView.Name = "grupoUsuariosDataGridView";
-            this.grupoUsuariosDataGridView.ReadOnly = true;
-            this.grupoUsuariosDataGridView.RowHeadersWidth = 51;
-            this.grupoUsuariosDataGridView.RowTemplate.Height = 24;
-            this.grupoUsuariosDataGridView.Size = new System.Drawing.Size(455, 476);
-            this.grupoUsuariosDataGridView.TabIndex = 4;
-            this.grupoUsuariosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grupoUsuariosDataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "NomeGrupo";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Grupos do usuário";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(707, 64);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(593, 64);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(64, 23);
             this.button2.TabIndex = 1;
@@ -337,7 +237,8 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(777, 63);
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(663, 63);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(74, 23);
             this.button3.TabIndex = 1;
@@ -347,7 +248,8 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(857, 64);
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Location = new System.Drawing.Point(743, 64);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(64, 23);
             this.button4.TabIndex = 1;
@@ -357,7 +259,8 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(1238, 62);
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.Location = new System.Drawing.Point(1034, 62);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(74, 23);
             this.button5.TabIndex = 1;
@@ -367,7 +270,8 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(1318, 63);
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.Location = new System.Drawing.Point(1114, 62);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(64, 23);
             this.button6.TabIndex = 1;
@@ -375,11 +279,129 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button3_Click);
             // 
+            // usuarioBindingSource1
+            // 
+            this.usuarioBindingSource1.DataSource = typeof(Models.Usuario);
+            // 
+            // usuarioDataGridView
+            // 
+            this.usuarioDataGridView.AllowUserToAddRows = false;
+            this.usuarioDataGridView.AllowUserToDeleteRows = false;
+            this.usuarioDataGridView.AllowUserToOrderColumns = true;
+            this.usuarioDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.usuarioDataGridView.AutoGenerateColumns = false;
+            this.usuarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.usuarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewCheckBoxColumn2});
+            this.usuarioDataGridView.DataSource = this.usuarioBindingSource1;
+            this.usuarioDataGridView.Location = new System.Drawing.Point(12, 92);
+            this.usuarioDataGridView.Name = "usuarioDataGridView";
+            this.usuarioDataGridView.ReadOnly = true;
+            this.usuarioDataGridView.RowHeadersWidth = 51;
+            this.usuarioDataGridView.RowTemplate.Height = 24;
+            this.usuarioDataGridView.Size = new System.Drawing.Size(703, 524);
+            this.usuarioDataGridView.TabIndex = 8;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "NomeUsuario";
+            this.dataGridViewTextBoxColumn8.HeaderText = "NomeUsuario";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "CPF";
+            this.dataGridViewTextBoxColumn9.HeaderText = "CPF";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 125;
+            // 
+            // dataGridViewCheckBoxColumn2
+            // 
+            this.dataGridViewCheckBoxColumn2.DataPropertyName = "Ativo";
+            this.dataGridViewCheckBoxColumn2.HeaderText = "Ativo";
+            this.dataGridViewCheckBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
+            this.dataGridViewCheckBoxColumn2.ReadOnly = true;
+            this.dataGridViewCheckBoxColumn2.Width = 125;
+            // 
+            // grupoUsuariosBindingSource1
+            // 
+            this.grupoUsuariosBindingSource1.DataMember = "GrupoUsuarios";
+            this.grupoUsuariosBindingSource1.DataSource = this.usuarioBindingSource1;
+            // 
+            // grupoUsuariosDataGridView
+            // 
+            this.grupoUsuariosDataGridView.AllowUserToAddRows = false;
+            this.grupoUsuariosDataGridView.AllowUserToDeleteRows = false;
+            this.grupoUsuariosDataGridView.AllowUserToOrderColumns = true;
+            this.grupoUsuariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grupoUsuariosDataGridView.AutoGenerateColumns = false;
+            this.grupoUsuariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grupoUsuariosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn11});
+            this.grupoUsuariosDataGridView.DataSource = this.grupoUsuariosBindingSource1;
+            this.grupoUsuariosDataGridView.Location = new System.Drawing.Point(721, 93);
+            this.grupoUsuariosDataGridView.Name = "grupoUsuariosDataGridView";
+            this.grupoUsuariosDataGridView.ReadOnly = true;
+            this.grupoUsuariosDataGridView.RowHeadersWidth = 51;
+            this.grupoUsuariosDataGridView.RowTemplate.Height = 24;
+            this.grupoUsuariosDataGridView.Size = new System.Drawing.Size(455, 523);
+            this.grupoUsuariosDataGridView.TabIndex = 9;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "NomeGrupo";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Grupo de usuário";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
             // FormBuscarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1404, 580);
+            this.ClientSize = new System.Drawing.Size(1263, 636);
             this.Controls.Add(this.grupoUsuariosDataGridView);
             this.Controls.Add(this.usuarioDataGridView);
             this.Controls.Add(this.usuarioBindingNavigator);
@@ -397,8 +419,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingNavigator)).EndInit();
             this.usuarioBindingNavigator.ResumeLayout(false);
             this.usuarioBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuariosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuarioDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grupoUsuariosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuariosDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -423,7 +447,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton usuarioBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView usuarioDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -431,12 +454,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.BindingSource grupoUsuariosBindingSource;
-        private System.Windows.Forms.DataGridView grupoUsuariosDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.BindingSource usuarioBindingSource1;
+        private System.Windows.Forms.DataGridView usuarioDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
+        private System.Windows.Forms.BindingSource grupoUsuariosBindingSource1;
+        private System.Windows.Forms.DataGridView grupoUsuariosDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }
