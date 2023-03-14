@@ -75,13 +75,12 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(12, 64);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(562, 22);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -92,7 +91,6 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // usuarioBindingNavigator
             // 
@@ -244,10 +242,6 @@
             this.buttonAddUsuario.TabIndex = 1;
             this.buttonAddUsuario.Text = "Adicionar";
             this.buttonAddUsuario.UseVisualStyleBackColor = true;
-            this.buttonAddUsuario.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Location = new System.Drawing.Point(802, 64);
             this.button4.Name = "button4";
@@ -255,10 +249,9 @@
             this.button4.TabIndex = 1;
             this.button4.Text = "Excluir";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
-            // 
+            //// 
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.Location = new System.Drawing.Point(1093, 62);
             this.button5.Name = "button5";
@@ -266,7 +259,6 @@
             this.button5.TabIndex = 1;
             this.button5.Text = "Adicionar";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button3_Click);
             // 
             // button6
             // 
@@ -277,7 +269,6 @@
             this.button6.TabIndex = 1;
             this.button6.Text = "Excluir";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button3_Click);
             // 
             // usuarioBindingSource1
             // 
@@ -288,8 +279,8 @@
             this.usuarioDataGridView.AllowUserToAddRows = false;
             this.usuarioDataGridView.AllowUserToDeleteRows = false;
             this.usuarioDataGridView.AllowUserToOrderColumns = true;
-            this.usuarioDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.usuarioDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usuarioDataGridView.AutoGenerateColumns = false;
             this.usuarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -373,7 +364,7 @@
             this.grupoUsuariosDataGridView.AllowUserToAddRows = false;
             this.grupoUsuariosDataGridView.AllowUserToDeleteRows = false;
             this.grupoUsuariosDataGridView.AllowUserToOrderColumns = true;
-            this.grupoUsuariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grupoUsuariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grupoUsuariosDataGridView.AutoGenerateColumns = false;
             this.grupoUsuariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -414,7 +405,6 @@
             this.Controls.Add(this.textBox1);
             this.Name = "FormBuscarUsuario";
             this.Text = "Gestão de usuário";
-            this.Load += new System.EventHandler(this.FormBuscarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingNavigator)).EndInit();
             this.usuarioBindingNavigator.ResumeLayout(false);
