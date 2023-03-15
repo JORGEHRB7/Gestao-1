@@ -32,9 +32,12 @@ namespace BLL
             UsuarioDAL usuarioDAL = new UsuarioDAL();
             return usuarioDAL.BuscarTodos();
         }
-        public void Alterar(Usuario _usuario)
+        public void Alterar(Usuario _usuario, string confirmacaoDeSenha)
         {
+           // ValidarDados(_usuario, confirmacaoDeSenha);
 
+            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL.Alterar(_usuario);
         }
         private static void ValidarDados(Usuario _usuario)
         {
@@ -57,3 +60,4 @@ namespace BLL
         }
     }
 }
+    

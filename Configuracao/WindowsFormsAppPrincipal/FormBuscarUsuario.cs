@@ -16,5 +16,10 @@ namespace WindowsFormsAppPrincipal
         {
             InitializeComponent();
         }
+
+        private void FormBuscarUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
