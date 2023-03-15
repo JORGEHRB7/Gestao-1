@@ -193,6 +193,8 @@
             this.Controls.Add(this.permissoesDataGridView1);
             this.Controls.Add(this.grupoUsuarioDataGridView1);
             this.Name = "FormBuscarGrupoUsuario";
+            this.Text = "S";
+            this.Load += new System.EventHandler(this.FormBuscarGrupoUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.permissoesBindingSource1)).EndInit();

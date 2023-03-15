@@ -21,5 +21,10 @@ namespace WindowsFormsAppPrincipal
         {
 
         }
+
+        private void FormBuscarGrupoUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
