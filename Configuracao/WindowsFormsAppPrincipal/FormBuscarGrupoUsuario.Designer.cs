@@ -50,7 +50,6 @@
             // 
             // grupoUsuarioBindingSource1
             // 
-            this.grupoUsuarioBindingSource1.DataSource = typeof(Models.GrupoUsuario);
             // 
             // grupoUsuarioDataGridView1
             // 

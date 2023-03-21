@@ -4,10 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
-    
+
 namespace DAL
 {
-    public class UsuarioDAL
+    public class GrupoUsuarioDAL
     {
         public void Inserir(Usuario _usuario)
         {
@@ -109,8 +109,9 @@ namespace DAL
                         usuario.CPF = rd["CPF"].ToString();
                         usuario.Email = rd["Email"].ToString();
                         usuario.Ativo = Convert.ToBoolean(rd["Ativo"]);
+
                         GrupoUsuarioDAL grupoUsuarioDAL = new GrupoUsuarioDAL();
-                        usuario.GrupoUsuarios = grupoUsuarioDAL.BuscarPorIdUsuario(usuario.Id);
+                        //usuario.GrupoUsuarios = grupoUsuarioDAL.BuscarPorIdUsuario(usuario.Id);
                         usuarios.Add(usuario);
                     }
                 }
@@ -298,6 +299,11 @@ namespace DAL
             {
                 cn.Close();
             }
+        }
+
+        internal List<GrupoUsuario> BuscarPorIdUsuario(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

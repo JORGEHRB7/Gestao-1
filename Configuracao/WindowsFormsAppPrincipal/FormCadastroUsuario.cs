@@ -52,7 +52,7 @@ namespace WindowsFormsAppPrincipal
         {
             UsuarioBLL usuarioBLL = new UsuarioBLL();
             usuarioBindingSource.EndEdit();
-            usuarioBLL.Inserir((Usuario)usuarioBindingSource.Current);
+            usuarioBLL.Inserir((Usuario)usuarioBindingSource.Current, ConfirmacaoTextBox.Text);
         }
     }
 }

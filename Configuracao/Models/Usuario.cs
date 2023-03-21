@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿
+using BLL;
+using System.Collections.Generic;
 
 namespace Models
 {

@@ -1,9 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Models
+namespace BLL
 {
     public class GrupoUsuario
     {
+        public int Id { get; set; }
         public string NomeGrupo { get; set; }
         public List<Permissao> Permissoes { get; set; }
     }
