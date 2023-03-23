@@ -305,5 +305,15 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public void Excluir(GrupoUsuario grupoUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void BuscarPorUsuario(GrupoUsuario grupoUsuario)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
